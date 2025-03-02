@@ -1,10 +1,10 @@
-import { ContactForm } from "@/components/molecules/ContactForm/ContactForm";
+import { ContactForm } from "@/components/molecules/contact-form/contact-form";
 
 export default function ContactPage() {
   return (
-    <div>
+    <section className="w-full flex flex-col items-center justify-center pt-32">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <ContactForm />
-    </div>
+    </section>
   );
 }

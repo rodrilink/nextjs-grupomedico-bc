@@ -1,5 +1,4 @@
-import { Header } from "@/components/organisms/Header";
-import { Footer } from "@/components/organisms/Footer";
+import { Header, Footer } from "@/components/organisms";
 
 type MainTemplateProps = {
   children: React.ReactNode;
@@ -7,9 +6,9 @@ type MainTemplateProps = {
 };
 
 export const MainTemplate = ({ children }: MainTemplateProps) => (
-  <div className="min-h-screen grid grid-areas-layout grid-cols-layout grid-rows-layout md:grid-areas-mobile-layout">
+  <div className="min-h-screen grid grid-areas-layout grid-cols-layout grid-rows-layout">
     <Header />
-    <main className="grid-areas-[main] grid-in-main p-4">{children}</main>
+    <main className="grid-in-main">{children}</main>
     <Footer />
   </div>
 );

@@ -2,8 +2,8 @@
 
 import { useActionState } from "react";
 import { submitContactForm } from "@/app/(public)/contact/actions";
-import { Input } from "@/components/atoms/Input";
-import { Button } from "@/components/atoms/Button";
+import { Input } from "@/components/atoms/input";
+import { Button } from "@/components/atoms/button";
 
 export function ContactForm() {
   const [, formAction] = useActionState(submitContactForm, {
