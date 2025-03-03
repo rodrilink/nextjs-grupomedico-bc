@@ -1,2 +1,2 @@
 export * from "./menu.constants";
-// export * from "./page.constants";
+export * from "./page.constants";
